@@ -30,6 +30,7 @@ namespace David.Views.Pages
 
 	    /// <inheritdoc />
 	    protected override void OnAppearing() {
+            // Locks the call to avoid it recreating when the page appears again.
 	        if (_alreadyCreated == false) {
                 _alreadyCreated = true;
                 // Add the widgets to the xaml sections.
