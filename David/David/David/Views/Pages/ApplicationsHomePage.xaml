@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="David.Views.Pages.ApplicationsHomePage">
+    <ContentPage.Content>
+        <StackLayout x:Name="MainStackLayout"
+                     VerticalOptions="FillAndExpand">
+            <StackLayout x:Name="RoomLayout"/>
+
+            <StackLayout VerticalOptions="FillAndExpand"
+                         Orientation="Horizontal" Margin="40, 10, 40, 10">
+                <BoxView Color="Red"
+                         HorizontalOptions="StartAndExpand" VerticalOptions="Fill"
+                         WidthRequest="1"/>
+                <StackLayout x:Name="ApplicationLayout" HorizontalOptions="CenterAndExpand"/>
+                <BoxView Color="Red"
+                         HorizontalOptions="EndAndExpand" VerticalOptions="Fill"
+                         WidthRequest="1"/>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
